@@ -40,8 +40,8 @@
         "post-install-cmd": [
             "echo 'Install grunt and dependencies';",
             
-            "cd static;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy",
-            "cd static/admin;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy"
+            "cd static;sudo npm install grunt grunt-sass --save-dev grunt-contrib-watch grunt-contrib-copy",
+            "cd static/admin;sudo npm install grunt grunt-sass --save-dev grunt-contrib-watch grunt-contrib-copy"
         ],
         "post-update-cmd": [
 
@@ -57,7 +57,9 @@
             "echo 'Grunt admin init build'",
             "cd static/admin/;grunt composer",
 
-            "curl 'primephonic/atabase/routes/update'"
+            "curl 'primephonic/atabase/routes/update' >/dev/null 2>&1",
+            "echo 'Routes updated'"
+            
         ]
     }
 }

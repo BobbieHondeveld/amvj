@@ -1,9 +1,7 @@
 {
-  "name": "foundation-compass-app",
-  "version": "0.0.1",
-  "private": "true",
+  "name": "foundation-libsass-app",
   "dependencies": {
-    "foundation": "5.3.1",
+    "foundation": "5.4.2",
     "jquery-tokeninput": "latest",
     "jquery-form": "latest",
     "jqueryui": "latest",

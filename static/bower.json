@@ -1,7 +1,7 @@
 {
   "name": "foundation-libsass-template",
   "dependencies": {
-    "foundation": "5.3.1",
+    "foundation": "5.4.2",
     "jquery-tokeninput": "latest",
     "jquery-form": "latest",
     "jqueryui": "latest",
