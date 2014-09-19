@@ -40,8 +40,8 @@
         "post-install-cmd": [
             "echo 'Install grunt and dependencies';",
             
-            "cd static;sudo npm install grunt grunt-contrib-sass grunt-contrib-watch grunt-contrib-copy",
-            "cd static/admin;sudo npm install grunt grunt-contrib-sass grunt-contrib-watch grunt-contrib-copy grunt-script-link-tags grunt-contrib-concat"
+            "cd static;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy",
+            "cd static/admin;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy"
         ],
         "post-update-cmd": [
 
@@ -53,6 +53,7 @@
 
             "echo 'Bower admin update'",
             "cd static/admin/;bower install",
+            
             "echo 'Grunt admin init build'",
             "cd static/admin/;grunt composer",
 
