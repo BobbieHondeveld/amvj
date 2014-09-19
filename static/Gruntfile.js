@@ -28,7 +28,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('build', ['sass']);
+  grunt.registerTask('composer', ['build']);
   grunt.registerTask('default', ['build','watch']);
 }

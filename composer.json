@@ -1,10 +1,10 @@
 {
     "name": "atabix/default",
-    "description": "Description",
-    "homepage": "atabix.default",
+    "description": "Atabix Default Package",
+    "homepage": "http://www.atabix.com",
     "time": "YYYY-MM-DD",
     "license": "MIT",
-    "keywords": "Atabix",
+    "keywords": ["Atabix"],
     "authors": [
         {
             "name": "Frontend",
@@ -23,12 +23,12 @@
 	  	"email": "support@atabix.com"  
     },
     "repositories": [
-           {"type": "vcs", "url":"git@github.com:atabix/atabase.git" }
+           {"type": "vcs", "url":"git@github.com:atabix/atabase.git" },
+           {"type": "vcs", "url":"git@github.com:atabix/atabase-datatables.git" }
     ],
     "require": {
         "atabix/atabase": "*",
-        "datatables/datatables": "*",
-        "lampjunkie/php-datatables": "*"
+        "atabix/atabase-datatables": "*"
     },
     "minimum-stability": "dev",
     "autoload": {
@@ -36,5 +36,27 @@
               "Atabix\\": "src/Atabix"
          }
     },
-    "bin": ["lib/datatables/extensions/Editor-1.3.2/php/Bootstrap.php"]
+    "scripts": {
+        "post-install-cmd": [
+            "echo 'Install grunt and dependencies';",
+            
+            "cd static;sudo npm install grunt grunt-contrib-sass grunt-contrib-watch grunt-contrib-copy",
+            "cd static/admin;sudo npm install grunt grunt-contrib-sass grunt-contrib-watch grunt-contrib-copy"
+        ],
+        "post-update-cmd": [
+
+            "echo 'Bower frontend update'",
+            "cd static/;bower install",
+
+            "echo 'Grunt frontend init build'",
+            "cd static/;grunt composer",
+
+            "echo 'Bower admin update'",
+            "cd static/admin/;bower install",
+            "echo 'Grunt admin init build'",
+            "cd static/admin/;grunt composer",
+
+            "curl 'primephonic/atabase/routes/update'"
+        ]
+    }
 }
