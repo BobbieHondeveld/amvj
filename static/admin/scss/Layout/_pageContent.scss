@@ -1,0 +1,39 @@
+.pageContent {
+  padding-top: $column-gutter;
+  padding-bottom: 0;
+
+	.leftPanel {
+		@media #{$medium-up} {
+			&.columns, .column {
+				padding-left: 0;
+                height: 100vh!important;
+			}
+		}
+	}
+
+	.mainPanel {
+
+	}
+
+	.rightPanel {
+		padding-top: rem-calc(3);
+
+		@media #{$large-up} {
+			&.columns, .column {
+				padding-left: 0;
+			}
+		}
+
+		.sectionTitle {
+			h2 {
+				font-weight: strong;
+				font-size: rem-calc(16);
+			}
+		}
+	}
+
+	.sectionTitle {
+		border-bottom: 1px solid $section-border-color;
+		margin-bottom: rem-calc(15)
+	}
+}

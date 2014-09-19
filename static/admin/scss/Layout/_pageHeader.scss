@@ -1,0 +1,52 @@
+.pageHeader {
+	position: relative;
+	margin-bottom: rem-calc(90);
+
+	@media #{$medium-up} {
+		margin-bottom: rem-calc(50);
+	}
+
+  .topBar {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+	height: rem-calc(130);
+	padding-top: $column-gutter / 3;
+    border-bottom: 1px solid $section-border-color;
+    background-color: transparentize(#ffffff, 0.1);
+
+    @media #{$medium-up} {
+		height: rem-calc(65);
+    }
+
+    .logoWrapper {
+		position:relative;
+		width: 100%;
+		min-width: rem-calc(110);
+		padding-top: rem-calc(5);
+		padding-bottom: rem-calc(5);
+
+		@media #{$medium-up}{
+			border-right: 1px solid $section-border-color;
+		}
+
+      .logo {
+        display: block;
+        overflow: hidden;
+        width: auto;
+        height: rem-calc(20);
+		margin-right: rem-calc(10);
+		margin-top: rem-calc(10);
+		padding-bottom: rem-calc(15);
+        background: url('../img/logo.png') no-repeat;
+		background-size: contain;
+
+		@media #{$large-up} {
+			padding-top: rem-calc(10);
+			margin-top: rem-calc(8);
+			margin-right: rem-calc(25);
+		}
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/conf/
+/tmp/
+/vendor/
+^.htaccess
+^.htpasswd
+.DS_Store
+git-daemon-export-ok
+.idea/
+composer
+composer.lock
+opsworks.php
+/content/

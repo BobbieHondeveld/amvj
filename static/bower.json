@@ -1,0 +1,10 @@
+{
+  "name": "foundation-libsass-template",
+  "dependencies": {
+    "foundation": "5.3.1",
+    "jquery-tokeninput": "latest",
+    "jquery-form": "latest",
+    "jqueryui": "latest",
+    "jquery-file-upload": "latest"
+  }
+}

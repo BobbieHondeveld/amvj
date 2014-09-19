@@ -1,0 +1,17 @@
+.navigation {
+	width: 100%;
+	min-width: rem-calc(130);
+	padding-bottom: $column-gutter;
+    height: 100%;
+
+	@media #{$large-up}{
+		border-right: 1px solid $section-border-color;
+		height: 100vh;
+	}
+
+  .mainNavigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

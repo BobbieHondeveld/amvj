@@ -1,0 +1,30 @@
+{
+    "name": "atabix/atabase-datatables",
+    "description": "Package for DataTables in Atabase",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Hage",
+            "email": "paul.hage@atabix.com"
+        },
+        {
+            "name": "Jevon van Dijk",
+            "email": "jevon.van.dijk@atabix.nl"
+        }
+    ],
+    "repositories": [
+           {"type": "vcs", "url":"git@github.com:atabix/atabase.git" }
+    ],
+    "require": {
+        "atabix/atabase": "*",
+        "datatables/datatables": "*",
+        "lampjunkie/php-datatables": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+         "psr-4": {
+              "Atabix\\": "src/Atabix"
+         }
+    },
+    "bin": ["lib/datatables/extensions/Editor-1.3.2/php/Bootstrap.php"]
+}

@@ -1,0 +1,12 @@
+.pageFooter {
+  padding-top: $column-gutter;
+  padding-bottom: $column-gutter;
+	border-top: 1px solid $primary-color;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #ffffff;
+  p {
+    font-size: rem-calc(12);
+    padding: 0;
+  }
+}
