@@ -1,17 +1,27 @@
 {
-    "name": "atabix/atabase-datatables",
-    "description": "Package for DataTables in Atabase",
+    "name": "atabix/default",
+    "description": "Description",
+    "homepage": "atabix.default",
+    "time": "YYYY-MM-DD",
     "license": "MIT",
+    "keywords": "Atabix",
     "authors": [
         {
-            "name": "Paul Hage",
-            "email": "paul.hage@atabix.com"
+            "name": "Frontend",
+            "email": "Frontend@atabix.com",
+            "homepage": "http://www.atabix.com",
+            "role": "developer"
         },
         {
-            "name": "Jevon van Dijk",
-            "email": "jevon.van.dijk@atabix.nl"
+            "name": "Backend",
+            "email": "Backend@atabix.com",
+            "homepage": "http://www.atabix.com",
+            "role": "developer"
         }
     ],
+    "support": {
+	  	"email": "support@atabix.com"  
+    },
     "repositories": [
            {"type": "vcs", "url":"git@github.com:atabix/atabase.git" }
     ],
