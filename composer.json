@@ -38,10 +38,21 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "echo 'Install grunt and dependencies';",
             
-            "cd static;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy",
-            "cd static/admin;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy grunt-contrib-uglify grunt-contrib-cssmin"
+            "echo 'Install gem Sass';",
+            "sudo gem install sass",
+
+            "echo 'Install gem Foundation';",
+            "sudo gem install foundation",
+
+            "echo 'Install grunt and dependencies';",
+
+            "cd static;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy grunt-autoprefixer --save-dev",
+            "cd static/admin;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy grunt-contrib-uglify grunt-contrib-cssmin grunt-autoprefixer --save-dev",
+
+            "echo 'Update caniuse database'",
+            "cd static;sudo npm update caniuse-db",
+            "cd static/admin;sudo npm update caniuse-db"
         ],
         "post-update-cmd": [
 
@@ -57,7 +68,7 @@
             "echo 'Grunt admin init build'",
             "cd static/admin/;grunt composer",
 
-            "curl 'default/atabase/routes/update' >/dev/null 2>&1",
+            "curl 'atabase-default/atabase/routes/update' >/dev/null 2>&1",
             "echo 'Routes updated'"
             
         ]
