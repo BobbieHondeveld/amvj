@@ -1,15 +1,14 @@
-
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
       options: {
-        includePaths: ['components/foundation/scss']
+        includePaths: ['../components/foundation/scss']
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'expanded'
         },
         files: {
           'css/style.css': 'scss/style.scss'
@@ -25,6 +24,18 @@ module.exports = function(grunt) {
             'components/foundation/css/foundation.css',
 
             '../../vendor/datatables/datatables/media/css/jquery.dataTables.min.css', 
+
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/ColVis/css/dataTables.colVis.min.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/Editor-1.3.2/css/dataTables.editor.min.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/Responsive/css/dataTables.responsive.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/Scroller/css/dataTables.scroller.min.css',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/TableTools/css/dataTables.tableTools.min.css',
+
             'css/foundation-icons.css',
             'css/style.css'
           ]
@@ -35,6 +46,8 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         options: {
+          mangle: false
+
         },
         files: {
           'js/mi.min.js': [
@@ -51,12 +64,25 @@ module.exports = function(grunt) {
             'components/jquery-tokeninput/build/jquery.tokeninput.min.js',
 
             '../../vendor/datatables/datatables/media/js/jquery.dataTables.min.js',
+
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/ColVis/js/dataTables.colVis.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/Editor-1.3.2/js/dataTables.editor.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/Responsive/js/dataTables.responsive.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/Scroller/js/dataTables.scroller.min.js',
+            '../../vendor/atabix/atabase-datatables/lib/datatables/extensions/TableTools/js/dataTables.tableTools.min.js',
+
             'js/cssmenu.js',
             'js/main.js'
           ]
         }
       }
     },
+   
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },

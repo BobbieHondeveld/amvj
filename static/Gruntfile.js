@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: ['../components/foundation/scss']
+        includePaths: ['components/foundation/scss']
       },
       dist: {
         options: {
