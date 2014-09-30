@@ -67,9 +67,6 @@
             
             "echo 'Grunt admin init build'",
             "cd static/admin/;grunt composer",
-
-            "curl 'atabase-default/atabase/routes/update' >/dev/null 2>&1",
-            "echo 'Routes updated'"
             
         ]
     }
