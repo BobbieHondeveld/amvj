@@ -1,7 +1,17 @@
-@import "settings/settings";
-@import "base/fonts";
+@import "Settings/settings";
 @import "foundation";
 
+// Base partials
+@import "Base/defaults";
+@import "Base/fonts";
+
+// Layout partials
+@import "Layout/pageHeader";
+@import "Layout/pageContent";
+@import "Layout/pageFooter";
+
+// Module partials
+@import "Modules/globalNav";
 
 //   Or selectively include components
 //   @import
@@ -23,7 +33,6 @@
 //   "foundation/components/labels",
 //   "foundation/components/magellan",
 //   "foundation/components/orbit",
-
 //   "foundation/components/pagination",
 //   "foundation/components/panels",
 //   "foundation/components/pricing-tables",
@@ -41,9 +50,4 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
-
-@import "Base/defaults";
-@import "Layout/pageHeader";
-@import "Layout/pageFooter";
-@import "Modules/globalNav";
 

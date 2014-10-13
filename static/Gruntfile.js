@@ -41,5 +41,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
 
+  grunt.registerTask('composer', ['build']);
+  grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['sass:dist', 'watch', 'autoprefixer']);
 }
