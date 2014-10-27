@@ -40,7 +40,7 @@
         "post-install-cmd": [
             
             "echo 'Install gem Sass';",
-            "sudo gem install sass",
+            "sudo gem install sass -v 3.4",
 
             "echo 'Install gem Foundation';",
             "sudo gem install foundation",
