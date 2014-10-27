@@ -10,7 +10,6 @@ composer
 composer.lock
 opsworks.php
 /content/
-/static/components/
 /static/node_modules/
 /static/admin/components/
 /static/admin/node_modules/
