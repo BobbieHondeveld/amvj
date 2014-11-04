@@ -13,3 +13,4 @@ opsworks.php
 /static/node_modules/
 /static/admin/components/
 /static/admin/node_modules/
+static/components

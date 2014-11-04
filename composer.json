@@ -35,39 +35,5 @@
          "psr-4": {
               "Atabix\\": "src/Atabix"
          }
-    },
-    "scripts": {
-        "post-install-cmd": [
-            
-            "echo 'Install gem Sass';",
-            "sudo gem install sass -v 3.4",
-
-            "echo 'Install gem Foundation';",
-            "sudo gem install foundation",
-
-            "echo 'Install grunt and dependencies';",
-
-            "cd static;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy grunt-autoprefixer --save-dev",
-            "cd static/admin;sudo npm install grunt grunt-sass grunt-contrib-watch grunt-contrib-copy grunt-contrib-uglify grunt-contrib-cssmin grunt-autoprefixer --save-dev",
-
-            "echo 'Update caniuse database'",
-            "cd static;sudo npm update caniuse-db",
-            "cd static/admin;sudo npm update caniuse-db"
-        ],
-        "post-update-cmd": [
-
-            "echo 'Bower frontend update'",
-            "cd static/;bower install",
-
-            "echo 'Grunt frontend init build'",
-            "cd static/;grunt composer",
-
-            "echo 'Bower admin update'",
-            "cd static/admin/;bower install",
-            
-            "echo 'Grunt admin init build'",
-            "cd static/admin/;grunt composer"
-            
-        ]
     }
 }
