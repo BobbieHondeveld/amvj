@@ -1,10 +1,10 @@
 <?php
 
+namespace DefaultProject\Website;
+
 use Atabix\Core as Atabase;
-use Primephonic\Models as Models;
 
-class PublicController extends \Atabase\Controller {
-
+class PublicController extends Atabase\Controller {
 
 	public function beforeHandler() {
 
@@ -21,7 +21,7 @@ class PublicController extends \Atabase\Controller {
 	}
 
 	public function home() {
-		echo "HOME";
+		throw new Atabase\Exceptions\HTTPRedirectException("/admin/");
 	}
 
 }

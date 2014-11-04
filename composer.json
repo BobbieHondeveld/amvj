@@ -33,7 +33,7 @@
     "minimum-stability": "dev",
     "autoload": {
          "psr-4": {
-              "Atabix\\": "src/Atabix"
+              "DefaultProject\\": "src/DefaultProject"
          }
     }
 }

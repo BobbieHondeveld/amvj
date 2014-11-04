@@ -34,8 +34,9 @@ try {
 /*****************************************/
 try {
 	$router=new Atabase\RequestRouter($baseDir);
-	$router->addNamespace('Gassan');
-	$router->addDispatcher(new Atabase\Route('Gassan\Website\PublicController', '/', 'dispatcher1'));
+	$router->addNamespace('DefaultProject');
+	$router->addVendorExtension("atabix/atabase", "Atabix");
+	//$router->addDispatcher(new Atabase\Route('Gassan\Website\PublicController', '/', 'dispatcher1'));
 /*
 	$router->addDispatcher(new Atabase\Route('Gassan\Website\PublicController', '/checkout/', 'dispatcher2'));
 	$router->addDispatcher(new Atabase\Route('Gassan\Website\PublicController', '/', 'dispatcher1'));
