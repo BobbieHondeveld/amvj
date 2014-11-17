@@ -100,6 +100,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('build', ['sass', 'cssmin', 'uglify']);
+
   grunt.registerTask('composer', ['build']);
   grunt.registerTask('default', ['build','watch']);
 }
