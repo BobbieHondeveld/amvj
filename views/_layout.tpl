@@ -79,7 +79,7 @@
         <!-- CDN / Libraries -->
         <script src="//code.jquery.com/jquery-1.10.0.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-        <script src="//dbilkmgtn0txr.cloudfront.net/v1.0/foundation.min.js"></script>
+        <script src="//dbilkmgtn0txr.cloudfront.net/v1.0/foundation/foundation.min.js"></script>
 
         <!-- DEV -->
         <script src="/static/js/init.js"></script>
