@@ -128,9 +128,9 @@ module.exports = function(grunt) {
     grunt.registerTask('build', ['sass:dist', 'autoprefixer', 'cssmin', 'uglify', 'css_sprite']);
     grunt.registerTask('composer', ['build']);
 
-    grunt.registerTask('imagemin', ['imagemin']); // execute on both .png and .jpg
-    grunt.registerTask('imagepng', ['imagemin:png']); // only .png files
-    grunt.registerTask('imagejpg', ['imagemin:jpg']); // only .jpg files
+    grunt.registerTask('image-min', ['imagemin']); // execute on both .png and .jpg
+    grunt.registerTask('image-png', ['imagemin:png']); // only .png files
+    grunt.registerTask('image-jpg', ['imagemin:jpg']); // only .jpg files
 
     grunt.registerTask('sprite', ['css_sprite']);
 
