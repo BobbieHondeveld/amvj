@@ -134,6 +134,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('sprite', ['css_sprite']);
 
-    grunt.registerTask('default', ['sass:dist', 'watch', 'autoprefixer']);
+    grunt.registerTask('default', ['sass:dist', 'autoprefixer', 'watch']);
 
 }
