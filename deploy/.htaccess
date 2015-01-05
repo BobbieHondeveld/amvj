@@ -1,19 +1,12 @@
 #AuthType Basic
-#AuthName "Gassan Test"
-#AuthUserFile /srv/www/gassan_test/current/.htpasswd
+#AuthName "Atabix Cloud 3.0"
+#AuthUserFile /srv/www/cloud/current/.htpasswd
 #Require valid-user
 
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
-
-Redirect 301 /diamanten /nl/diamanten
-Redirect 301 /tours /nl/tours
-Redirect 301 /tours/gratis-rondleiding /nl/tours
-Redirect 301 /contact/winkels /nl/juweliers
-Redirect 301 /nl/diamanten/gassan-121 /nl/witgouden-solitair-ring-online
-Redirect 301 /merken /nl/merken
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
 RewriteRule ^cnf/ /
 RewriteRule ^deploy/ /
@@ -21,6 +14,7 @@ RewriteRule ^src/ /
 RewriteRule ^tmp/ /
 RewriteRule ^vendor/ /
 RewriteRule ^views/ /
+RewriteRule ^content/invoices/ /
 
 RewriteCond %{REQUEST_FILENAME} -s [OR]
 RewriteCond %{REQUEST_FILENAME} -l [OR]
@@ -29,17 +23,21 @@ RewriteRule ^.*$ - [NC,L]
 RewriteRule ^.*$ /index.php [NC,L]
 
 
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access 1 month"
-ExpiresByType image/jpeg "access 1 month"
-ExpiresByType image/gif "access 1 month"
-ExpiresByType image/png "access 1 month"
-ExpiresByType text/css "access 1 month"
-ExpiresByType text/html "access 1 month"
-ExpiresByType application/pdf "access 1 month"
-ExpiresByType text/x-javascript "access 1 month"
-ExpiresByType application/x-shockwave-flash "access 1 month"
-ExpiresByType image/x-icon "access 1 month"
-ExpiresDefault "access 1 month"
-</IfModule>
+#<IfModule mod_expires.c>
+#ExpiresActive On
+#ExpiresByType image/jpg "access 1 month"
+#ExpiresByType image/jpeg "access 1 month"
+#ExpiresByType image/gif "access 1 month"
+#ExpiresByType image/png "access 1 month"
+#ExpiresByType text/css "access 1 month"
+#ExpiresByType text/html "access 1 month"
+#ExpiresByType application/pdf "access 1 month"
+#ExpiresByType text/x-javascript "access 1 month"
+#ExpiresByType application/x-shockwave-flash "access 1 month"
+#ExpiresByType image/x-icon "access 1 month"
+#ExpiresDefault "access 1 month"
+#</IfModule>
+
+#<ifModule mod_headers.c>
+#Header set Connection keep-alive
+#</ifModule>
