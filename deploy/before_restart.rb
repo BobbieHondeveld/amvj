@@ -13,8 +13,6 @@ bash "installing atabase environment" do
     chmod 0775 ./tmp
     mkdir conf
     chmod -R 0775 ./conf
-    mkdir content
-    chmod -R 0775 ./content
     ./composer update
     chmod 0775 ./vendor/spekkionu/htmlpurifier/HTMLPurifier/DefinitionCache/Serializer
   EOH

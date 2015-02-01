@@ -2,9 +2,9 @@
   "name": "foundation-libsass-template",
   "dependencies": {
     "foundation": "5.4.7",
-    "jquery-tokeninput": "latest",
     "jquery-form": "latest",
     "jqueryui": "latest",
-    "jquery-file-upload": "latest"
+    "jquery-file-upload": "latest",
+    "atabix-mi8": "https://github.com/atabix/atabix-mi8.git",
   }
 }
