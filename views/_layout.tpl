@@ -1,9 +1,9 @@
 <!doctype html>
 
-<!–[if IE 7 ]><html lang="en" class="ie7"><![endif]–>
-<!–[if IE 8 ]><html lang="en" class="ie8"><![endif]–>
-<!-[if IE 9 ]><html class="lt-ie10" lang="en"><![endif]->
-<!–[if (gt IE 9)|!(IE)]><!–> <html lang="en"><!–<![endif]–>
+<!--[if lt IE 7 ]><html lang="en" class="ie7"><![endif]--> 
+<!--[if lt IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if lt IE 9 ]><html class="lt-ie10" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en"><![endif]-->
 
 <html class="no-js" lang="en">
 <head>
@@ -39,6 +39,7 @@
 
     <title>New project</title>
     <link rel="stylesheet" href="/static/css/style{* min *}.css"/>
+    <script src="/static/js/css_browser_selector.min.js" type="text/javascript"></script>
     <script src="/static/components/modernizr/modernizr.js"></script>
 </head>
 	
