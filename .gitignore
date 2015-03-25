@@ -1,3 +1,4 @@
+conf/
 vendor/
 ^.htaccess
 ^.htpasswd
