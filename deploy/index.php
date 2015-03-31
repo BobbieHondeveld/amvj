@@ -10,7 +10,7 @@ use Atabix\Core as Atabase;
 try {
 	$baseDir = __DIR__;
 	require_once $baseDir . '/vendor/autoload.php';
-	$kernel = Atabase\Bootstrapper::KERNEL_LIVE;
+	$kernel = Atabase\Bootstrapper::KERNEL_TEST;
 
 	$bootstrapper = new Atabase\Bootstrapper($kernel, $baseDir);
 	$bootstrapper->init();
