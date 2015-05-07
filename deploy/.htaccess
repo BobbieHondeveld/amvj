@@ -22,6 +22,10 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^.*$ - [NC,L]
 RewriteRule ^.*$ /index.php [NC,L]
 
+#php_value post_max_size 48M
+#php_value upload_max_filesize 32M
+#php_value memory_limit 2048M
+#php_flag magic_quotes_gpc off
 
 #<IfModule mod_expires.c>
 #ExpiresActive On
