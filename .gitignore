@@ -1,5 +1,6 @@
 conf/
 vendor/
+tmp/
 ^.htaccess
 ^.htpasswd
 .DS_Store
